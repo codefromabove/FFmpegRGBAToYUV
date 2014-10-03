@@ -7,10 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#include "ConvertRGBA.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSButton *createMovieButton;
 @end
 
 @implementation AppDelegate
@@ -23,4 +25,12 @@
     // Insert code here to tear down your application
 }
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
+    return YES;
+}
+
+
+- (IBAction)createMovie:(id)sender {
+    convertRGBA();
+}
 @end

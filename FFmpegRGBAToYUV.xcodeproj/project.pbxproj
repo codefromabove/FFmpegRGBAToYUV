@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662D20DE19DF219A00DD1BFD /* ConvertRGBA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 662D20DC19DF219A00DD1BFD /* ConvertRGBA.cpp */; };
+		662D20E419DF226E00DD1BFD /* libavcodec.56.1.101.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 662D20E019DF226E00DD1BFD /* libavcodec.56.1.101.dylib */; };
+		662D20E519DF226E00DD1BFD /* libavutil.54.7.101.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 662D20E119DF226E00DD1BFD /* libavutil.54.7.101.dylib */; };
+		662D20E619DF226E00DD1BFD /* libswresample.1.1.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 662D20E219DF226E00DD1BFD /* libswresample.1.1.100.dylib */; };
+		662D20E719DF226E00DD1BFD /* libswscale.3.1.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 662D20E319DF226E00DD1BFD /* libswscale.3.1.100.dylib */; };
 		66EDE07F19DF15A600D2DDAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EDE07E19DF15A600D2DDAD /* main.m */; };
-		66EDE08219DF15A600D2DDAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EDE08119DF15A600D2DDAD /* AppDelegate.m */; };
+		66EDE08219DF15A600D2DDAD /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66EDE08119DF15A600D2DDAD /* AppDelegate.mm */; };
 		66EDE08419DF15A600D2DDAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66EDE08319DF15A600D2DDAD /* Images.xcassets */; };
 		66EDE08719DF15A600D2DDAD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66EDE08519DF15A600D2DDAD /* MainMenu.xib */; };
 		66EDE09319DF15A600D2DDAD /* FFmpegRGBAToYUVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EDE09219DF15A600D2DDAD /* FFmpegRGBAToYUVTests.m */; };
@@ -25,11 +30,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		662D20DC19DF219A00DD1BFD /* ConvertRGBA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvertRGBA.cpp; sourceTree = "<group>"; };
+		662D20DD19DF219A00DD1BFD /* ConvertRGBA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertRGBA.h; sourceTree = "<group>"; };
+		662D20E019DF226E00DD1BFD /* libavcodec.56.1.101.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.56.1.101.dylib; path = /opt/local/lib/libavcodec.56.1.101.dylib; sourceTree = "<absolute>"; };
+		662D20E119DF226E00DD1BFD /* libavutil.54.7.101.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.54.7.101.dylib; path = /opt/local/lib/libavutil.54.7.101.dylib; sourceTree = "<absolute>"; };
+		662D20E219DF226E00DD1BFD /* libswresample.1.1.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.1.1.100.dylib; path = /opt/local/lib/libswresample.1.1.100.dylib; sourceTree = "<absolute>"; };
+		662D20E319DF226E00DD1BFD /* libswscale.3.1.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.3.1.100.dylib; path = /opt/local/lib/libswscale.3.1.100.dylib; sourceTree = "<absolute>"; };
 		66EDE07919DF15A600D2DDAD /* FFmpegRGBAToYUV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegRGBAToYUV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66EDE07D19DF15A600D2DDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66EDE07E19DF15A600D2DDAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66EDE08019DF15A600D2DDAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		66EDE08119DF15A600D2DDAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66EDE08119DF15A600D2DDAD /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		66EDE08319DF15A600D2DDAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		66EDE08619DF15A600D2DDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		66EDE08C19DF15A600D2DDAD /* FFmpegRGBAToYUVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFmpegRGBAToYUVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +53,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662D20E419DF226E00DD1BFD /* libavcodec.56.1.101.dylib in Frameworks */,
+				662D20E519DF226E00DD1BFD /* libavutil.54.7.101.dylib in Frameworks */,
+				662D20E619DF226E00DD1BFD /* libswresample.1.1.100.dylib in Frameworks */,
+				662D20E719DF226E00DD1BFD /* libswscale.3.1.100.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +70,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		662D20DF19DF21B100DD1BFD /* FFmpeg Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				662D20E019DF226E00DD1BFD /* libavcodec.56.1.101.dylib */,
+				662D20E119DF226E00DD1BFD /* libavutil.54.7.101.dylib */,
+				662D20E219DF226E00DD1BFD /* libswresample.1.1.100.dylib */,
+				662D20E319DF226E00DD1BFD /* libswscale.3.1.100.dylib */,
+			);
+			name = "FFmpeg Libraries";
+			sourceTree = "<group>";
+		};
 		66EDE07019DF15A600D2DDAD = {
 			isa = PBXGroup;
 			children = (
+				662D20DF19DF21B100DD1BFD /* FFmpeg Libraries */,
 				66EDE07B19DF15A600D2DDAD /* FFmpegRGBAToYUV */,
 				66EDE08F19DF15A600D2DDAD /* FFmpegRGBAToYUVTests */,
 				66EDE07A19DF15A600D2DDAD /* Products */,
@@ -77,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				66EDE08019DF15A600D2DDAD /* AppDelegate.h */,
-				66EDE08119DF15A600D2DDAD /* AppDelegate.m */,
+				66EDE08119DF15A600D2DDAD /* AppDelegate.mm */,
+				662D20DC19DF219A00DD1BFD /* ConvertRGBA.cpp */,
+				662D20DD19DF219A00DD1BFD /* ConvertRGBA.h */,
 				66EDE08319DF15A600D2DDAD /* Images.xcassets */,
 				66EDE08519DF15A600D2DDAD /* MainMenu.xib */,
 				66EDE07C19DF15A600D2DDAD /* Supporting Files */,
@@ -210,8 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66EDE08219DF15A600D2DDAD /* AppDelegate.m in Sources */,
+				66EDE08219DF15A600D2DDAD /* AppDelegate.mm in Sources */,
 				66EDE07F19DF15A600D2DDAD /* main.m in Sources */,
+				662D20DE19DF219A00DD1BFD /* ConvertRGBA.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +356,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/local/include,
+				);
 				INFOPLIST_FILE = FFmpegRGBAToYUV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -337,8 +376,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/local/include,
+				);
 				INFOPLIST_FILE = FFmpegRGBAToYUV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -398,6 +446,7 @@
 				66EDE09819DF15A600D2DDAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66EDE09919DF15A600D2DDAD /* Build configuration list for PBXNativeTarget "FFmpegRGBAToYUVTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +455,7 @@
 				66EDE09B19DF15A600D2DDAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
