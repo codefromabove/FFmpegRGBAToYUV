@@ -5,7 +5,7 @@ An application may generate sequences of "raw" RGB or RGBA images, for example a
 
 I found a nice solution on stackoverflow:
 
-    http://stackoverflow.com/questions/16667687/how-to-convert-rgb-from-yuv420p-for-ffmpeg-encoder
+  http://stackoverflow.com/questions/16667687/how-to-convert-rgb-from-yuv420p-for-ffmpeg-encoder
  
 and created a little program to test it. I got a copy of an example C file from the FFmpeg web site:
 
