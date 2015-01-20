@@ -169,8 +169,13 @@ static void video_encode_example(const char *filename, int codec_id)
                 pos += 4;
             }
         }
-        
+
         uint8_t * inData[1] = { rgba32Data }; // RGBA32 have one plane
+        //
+        // NOTE: In a more general setting, the rows of your input image may
+        //       be padded; that is, the bytes per row may not be 4 * width.
+        //       In such cases, inLineSize should be set to that padded width.
+        //
         int inLinesize[1] = { 4*c->width }; // RGBA stride
         sws_scale(ctx, inData, inLinesize, 0, c->height, frame->data, frame->linesize);
         
