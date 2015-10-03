@@ -14,3 +14,5 @@ and created a little program to test it. I got a copy of an example C file from 
 and hacked up the video output function it contained, to convert some synthetically generated RGBA values to YUV, and then out to a file.
 
 For Mac users, I've provided an Xcode 6 project; it assumes you've used MacPorts to install the FFmpeg libraries and headers in /opt/local ("sudo port install ffmpeg-devel"). But it's fairly generic C/C++, so compiling on Linux should be simple.
+
+Have a look at the [Code From Above](http://codefromabove.com/2014/10/ffmpeg-convert-rgba-to-yuv/) blog post, which discusses this solution.
