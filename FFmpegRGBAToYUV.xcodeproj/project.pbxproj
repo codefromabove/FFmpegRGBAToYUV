@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		662D20DE19DF219A00DD1BFD /* ConvertRGBA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 662D20DC19DF219A00DD1BFD /* ConvertRGBA.cpp */; };
-		66836D5F23B000F90021F1B4 /* libavcodec.58.54.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 66836D5E23B000F90021F1B4 /* libavcodec.58.54.100.dylib */; };
-		66836D6123B001470021F1B4 /* libavutil.56.31.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 66836D6023B001470021F1B4 /* libavutil.56.31.100.dylib */; };
-		66836D6323B0016F0021F1B4 /* libswresample.3.5.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 66836D6223B0016F0021F1B4 /* libswresample.3.5.100.dylib */; };
-		66836D6523B001860021F1B4 /* libswscale.5.5.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 66836D6423B001860021F1B4 /* libswscale.5.5.100.dylib */; };
 		66836D6723B002660021F1B4 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66836D6623B002660021F1B4 /* AppKit.framework */; };
+		66836D6923B007360021F1B4 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66836D6823B007360021F1B4 /* libavcodec.a */; };
+		66836D6D23B0075E0021F1B4 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66836D6A23B0075E0021F1B4 /* libavutil.a */; };
+		66836D6E23B0075E0021F1B4 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66836D6B23B0075E0021F1B4 /* libswscale.a */; };
+		66836D6F23B0075E0021F1B4 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66836D6C23B0075E0021F1B4 /* libswresample.a */; };
 		66EDE07F19DF15A600D2DDAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EDE07E19DF15A600D2DDAD /* main.m */; };
 		66EDE08219DF15A600D2DDAD /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66EDE08119DF15A600D2DDAD /* AppDelegate.mm */; };
 		66EDE08419DF15A600D2DDAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66EDE08319DF15A600D2DDAD /* Images.xcassets */; };
@@ -33,15 +33,15 @@
 /* Begin PBXFileReference section */
 		662D20DC19DF219A00DD1BFD /* ConvertRGBA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvertRGBA.cpp; sourceTree = "<group>"; };
 		662D20DD19DF219A00DD1BFD /* ConvertRGBA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertRGBA.h; sourceTree = "<group>"; };
-		662D20E019DF226E00DD1BFD /* libavcodec.56.1.101.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.56.1.101.dylib; path = /opt/local/lib/libavcodec.56.1.101.dylib; sourceTree = "<absolute>"; };
-		662D20E119DF226E00DD1BFD /* libavutil.54.7.101.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.54.7.101.dylib; path = /opt/local/lib/libavutil.54.7.101.dylib; sourceTree = "<absolute>"; };
-		662D20E219DF226E00DD1BFD /* libswresample.1.1.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.1.1.100.dylib; path = /opt/local/lib/libswresample.1.1.100.dylib; sourceTree = "<absolute>"; };
-		662D20E319DF226E00DD1BFD /* libswscale.3.1.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.3.1.100.dylib; path = /opt/local/lib/libswscale.3.1.100.dylib; sourceTree = "<absolute>"; };
 		66836D5E23B000F90021F1B4 /* libavcodec.58.54.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.58.54.100.dylib; path = ../../../../opt/local/lib/libavcodec.58.54.100.dylib; sourceTree = "<group>"; };
 		66836D6023B001470021F1B4 /* libavutil.56.31.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.56.31.100.dylib; path = ../../../../opt/local/lib/libavutil.56.31.100.dylib; sourceTree = "<group>"; };
 		66836D6223B0016F0021F1B4 /* libswresample.3.5.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.3.5.100.dylib; path = ../../../../opt/local/lib/libswresample.3.5.100.dylib; sourceTree = "<group>"; };
 		66836D6423B001860021F1B4 /* libswscale.5.5.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.5.5.100.dylib; path = ../../../../opt/local/lib/libswscale.5.5.100.dylib; sourceTree = "<group>"; };
 		66836D6623B002660021F1B4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		66836D6823B007360021F1B4 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../../opt/local/lib/libavcodec.a; sourceTree = "<group>"; };
+		66836D6A23B0075E0021F1B4 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../../opt/local/lib/libavutil.a; sourceTree = "<group>"; };
+		66836D6B23B0075E0021F1B4 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../../../../opt/local/lib/libswscale.a; sourceTree = "<group>"; };
+		66836D6C23B0075E0021F1B4 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../../../../opt/local/lib/libswresample.a; sourceTree = "<group>"; };
 		66EDE07919DF15A600D2DDAD /* FFmpegRGBAToYUV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegRGBAToYUV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66EDE07D19DF15A600D2DDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66EDE07E19DF15A600D2DDAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,10 +60,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				66836D6723B002660021F1B4 /* AppKit.framework in Frameworks */,
-				66836D6523B001860021F1B4 /* libswscale.5.5.100.dylib in Frameworks */,
-				66836D6323B0016F0021F1B4 /* libswresample.3.5.100.dylib in Frameworks */,
-				66836D6123B001470021F1B4 /* libavutil.56.31.100.dylib in Frameworks */,
-				66836D5F23B000F90021F1B4 /* libavcodec.58.54.100.dylib in Frameworks */,
+				66836D6D23B0075E0021F1B4 /* libavutil.a in Frameworks */,
+				66836D6E23B0075E0021F1B4 /* libswscale.a in Frameworks */,
+				66836D6F23B0075E0021F1B4 /* libswresample.a in Frameworks */,
+				66836D6923B007360021F1B4 /* libavcodec.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,20 +77,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		662D20DF19DF21B100DD1BFD /* FFmpeg Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				662D20E019DF226E00DD1BFD /* libavcodec.56.1.101.dylib */,
-				662D20E119DF226E00DD1BFD /* libavutil.54.7.101.dylib */,
-				662D20E219DF226E00DD1BFD /* libswresample.1.1.100.dylib */,
-				662D20E319DF226E00DD1BFD /* libswscale.3.1.100.dylib */,
-			);
-			name = "FFmpeg Libraries";
-			sourceTree = "<group>";
-		};
 		66836D5D23B000F90021F1B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66836D6A23B0075E0021F1B4 /* libavutil.a */,
+				66836D6C23B0075E0021F1B4 /* libswresample.a */,
+				66836D6B23B0075E0021F1B4 /* libswscale.a */,
+				66836D6823B007360021F1B4 /* libavcodec.a */,
 				66836D6623B002660021F1B4 /* AppKit.framework */,
 				66836D6423B001860021F1B4 /* libswscale.5.5.100.dylib */,
 				66836D6223B0016F0021F1B4 /* libswresample.3.5.100.dylib */,
@@ -103,7 +96,6 @@
 		66EDE07019DF15A600D2DDAD = {
 			isa = PBXGroup;
 			children = (
-				662D20DF19DF21B100DD1BFD /* FFmpeg Libraries */,
 				66EDE07B19DF15A600D2DDAD /* FFmpegRGBAToYUV */,
 				66EDE08F19DF15A600D2DDAD /* FFmpegRGBAToYUVTests */,
 				66EDE07A19DF15A600D2DDAD /* Products */,
