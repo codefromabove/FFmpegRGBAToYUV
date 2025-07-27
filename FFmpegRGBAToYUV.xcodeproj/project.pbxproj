@@ -17,7 +17,6 @@
 		66EDE08219DF15A600D2DDAD /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66EDE08119DF15A600D2DDAD /* AppDelegate.mm */; };
 		66EDE08419DF15A600D2DDAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66EDE08319DF15A600D2DDAD /* Images.xcassets */; };
 		66EDE08719DF15A600D2DDAD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66EDE08519DF15A600D2DDAD /* MainMenu.xib */; };
-		66EDE09319DF15A600D2DDAD /* FFmpegRGBAToYUVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EDE09219DF15A600D2DDAD /* FFmpegRGBAToYUVTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +32,6 @@
 /* Begin PBXFileReference section */
 		662D20DC19DF219A00DD1BFD /* ConvertRGBA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvertRGBA.cpp; sourceTree = "<group>"; };
 		662D20DD19DF219A00DD1BFD /* ConvertRGBA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertRGBA.h; sourceTree = "<group>"; };
-		66836D5E23B000F90021F1B4 /* libavcodec.58.54.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.58.54.100.dylib; path = ../../../../opt/local/lib/libavcodec.58.54.100.dylib; sourceTree = "<group>"; };
-		66836D6023B001470021F1B4 /* libavutil.56.31.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.56.31.100.dylib; path = ../../../../opt/local/lib/libavutil.56.31.100.dylib; sourceTree = "<group>"; };
-		66836D6223B0016F0021F1B4 /* libswresample.3.5.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.3.5.100.dylib; path = ../../../../opt/local/lib/libswresample.3.5.100.dylib; sourceTree = "<group>"; };
-		66836D6423B001860021F1B4 /* libswscale.5.5.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.5.5.100.dylib; path = ../../../../opt/local/lib/libswscale.5.5.100.dylib; sourceTree = "<group>"; };
 		66836D6623B002660021F1B4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		66836D6823B007360021F1B4 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../../opt/local/lib/libavcodec.a; sourceTree = "<group>"; };
 		66836D6A23B0075E0021F1B4 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../../opt/local/lib/libavutil.a; sourceTree = "<group>"; };
@@ -49,9 +44,7 @@
 		66EDE08119DF15A600D2DDAD /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		66EDE08319DF15A600D2DDAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		66EDE08619DF15A600D2DDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		66EDE08C19DF15A600D2DDAD /* FFmpegRGBAToYUVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFmpegRGBAToYUVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		66EDE09119DF15A600D2DDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66EDE09219DF15A600D2DDAD /* FFmpegRGBAToYUVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFmpegRGBAToYUVTests.m; sourceTree = "<group>"; };
+		66EDE08C19DF15A600D2DDAD /* FFmpegRGBAToYUVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FFmpegRGBAToYUVTests.xctest; path = /Users/pjs/Applications/FFmpegRGBAToYUV/build/Debug/FFmpegRGBAToYUV.app/Contents/PlugIns/FFmpegRGBAToYUVTests.xctest; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +78,6 @@
 				66836D6B23B0075E0021F1B4 /* libswscale.a */,
 				66836D6823B007360021F1B4 /* libavcodec.a */,
 				66836D6623B002660021F1B4 /* AppKit.framework */,
-				66836D6423B001860021F1B4 /* libswscale.5.5.100.dylib */,
-				66836D6223B0016F0021F1B4 /* libswresample.3.5.100.dylib */,
-				66836D6023B001470021F1B4 /* libavutil.56.31.100.dylib */,
-				66836D5E23B000F90021F1B4 /* libavcodec.58.54.100.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				66EDE07B19DF15A600D2DDAD /* FFmpegRGBAToYUV */,
-				66EDE08F19DF15A600D2DDAD /* FFmpegRGBAToYUVTests */,
 				66EDE07A19DF15A600D2DDAD /* Products */,
 				66836D5D23B000F90021F1B4 /* Frameworks */,
 			);
@@ -107,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				66EDE07919DF15A600D2DDAD /* FFmpegRGBAToYUV.app */,
-				66EDE08C19DF15A600D2DDAD /* FFmpegRGBAToYUVTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,23 +118,6 @@
 			children = (
 				66EDE07D19DF15A600D2DDAD /* Info.plist */,
 				66EDE07E19DF15A600D2DDAD /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		66EDE08F19DF15A600D2DDAD /* FFmpegRGBAToYUVTests */ = {
-			isa = PBXGroup;
-			children = (
-				66EDE09219DF15A600D2DDAD /* FFmpegRGBAToYUVTests.m */,
-				66EDE09019DF15A600D2DDAD /* Supporting Files */,
-			);
-			path = FFmpegRGBAToYUVTests;
-			sourceTree = "<group>";
-		};
-		66EDE09019DF15A600D2DDAD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				66EDE09119DF15A600D2DDAD /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -261,7 +231,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66EDE09319DF15A600D2DDAD /* FFmpegRGBAToYUVTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
