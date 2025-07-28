@@ -43,6 +43,14 @@ extern "C"
 #include <libswscale/swscale.h>
 }
 
+// Removal of deprecated functions informed by https://github.com/ferdymercury/amide/pull/23/files
+#define FORCE_DEPRECATED_API 0
+#if (LIBAVCODEC_VERSION_INT < AV_VERSION_INT(58, 134, 100)) || FORCE_DEPRECATED_API
+#define USE_DEPRECATED_API 1
+#else
+#define USE_DEPRECATED_API 0
+#endif
+
 /*
  * Video encoding example
  */
@@ -50,10 +58,15 @@ static void video_encode_example(const char *filename, int codec_id)
 {
     AVCodec *codec;
     AVCodecContext *c= NULL;
-    int i, ret, x, y, got_output;
+    int i, ret, x, y;
     FILE *f;
     AVFrame *frame;
+#if USE_DEPRECATED_API
+    int got_output;
     AVPacket pkt;
+#else
+    AVPacket *pkt = av_packet_alloc();
+#endif
     uint8_t endcode[] = { 0, 0, 1, 0xb7 };
     
     printf("Encode video file %s\n", filename);
@@ -135,11 +148,11 @@ static void video_encode_example(const char *filename, int codec_id)
     
     /* encode 1 second of video */
     for (i = 0; i < 25; i++) {
+#if USE_DEPRECATED_API
         av_init_packet(&pkt);
         pkt.data = NULL;    // packet data will be allocated by the encoder
         pkt.size = 0;
-        
-        
+#endif
         fflush(stdout);
         /* prepare a dummy image */
         /* Y */
@@ -182,20 +195,39 @@ static void video_encode_example(const char *filename, int codec_id)
         frame->pts = i;
         
         /* encode the image */
+#if USE_DEPRECATED_API
         ret = avcodec_encode_video2(c, &pkt, frame, &got_output);
         if (ret < 0) {
             fprintf(stderr, "Error encoding frame\n");
             exit(7);
         }
-        
         if (got_output) {
             printf("Write frame %3d (size=%5d)\n", i, pkt.size);
             fwrite(pkt.data, 1, pkt.size, f);
             av_free_packet(&pkt);
         }
+#else
+        ret = avcodec_send_frame(c, frame);
+        if (ret == AVERROR_EOF) {
+            fprintf(stderr, "Error: encoding frame\n");
+            exit(7);
+        }
+        else if (ret < 0) {
+            fprintf(stderr, "Error encoding frame\n");
+            exit(8);
+        }
+        else {
+            while (avcodec_receive_packet(c, pkt) == 0) {
+                printf("Write frame %3d (size=%5d)\n", i, pkt->size);
+                fwrite(pkt->data, 1, pkt->size, f);
+                av_packet_unref(pkt);
+            }
+        }
+#endif
     }
     
     /* get the delayed frames */
+#if USE_DEPRECATED_API
     for (got_output = 1; got_output; i++) {
         fflush(stdout);
         
@@ -211,7 +243,24 @@ static void video_encode_example(const char *filename, int codec_id)
             av_free_packet(&pkt);
         }
     }
-    
+#else
+    ret = avcodec_send_frame(c, NULL);
+    if (ret == AVERROR_EOF) {
+        exit(7);
+    }
+    else if (ret < 0) {
+        exit(8);
+    }
+    else {
+        while (avcodec_receive_packet(c, pkt) == 0) {
+            fflush(stdout);
+            printf("Write frame %3d (size=%5d)\n", i, pkt->size);
+            fwrite(pkt->data, 1, pkt->size, f);
+            av_packet_unref(pkt);
+         }
+    }
+    av_packet_free(&pkt);
+#endif
     /* add sequence end code to have a real mpeg file */
     fwrite(endcode, 1, sizeof(endcode), f);
     fclose(f);
@@ -225,7 +274,8 @@ static void video_encode_example(const char *filename, int codec_id)
 
 void convertRGBA()
 {
+#if USE_DEPRECATED_API
     avcodec_register_all();
+#endif
     video_encode_example("/tmp/test.mpg", AV_CODEC_ID_MPEG2VIDEO);
-
 }
