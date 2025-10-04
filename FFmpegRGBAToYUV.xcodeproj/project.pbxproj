@@ -32,6 +32,7 @@
 /* Begin PBXFileReference section */
 		662D20DC19DF219A00DD1BFD /* ConvertRGBA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvertRGBA.cpp; sourceTree = "<group>"; };
 		662D20DD19DF219A00DD1BFD /* ConvertRGBA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertRGBA.h; sourceTree = "<group>"; };
+		667D86B92E91D6560053D943 /* FFmpegRGBAToYUVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFmpegRGBAToYUVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66836D6623B002660021F1B4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		66836D6823B007360021F1B4 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../../opt/local/lib/libavcodec.a; sourceTree = "<group>"; };
 		66836D6A23B0075E0021F1B4 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../../opt/local/lib/libavutil.a; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		66EDE08119DF15A600D2DDAD /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		66EDE08319DF15A600D2DDAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		66EDE08619DF15A600D2DDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		66EDE08C19DF15A600D2DDAD /* FFmpegRGBAToYUVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FFmpegRGBAToYUVTests.xctest; path = /Users/pjs/Applications/FFmpegRGBAToYUV/build/Debug/FFmpegRGBAToYUV.app/Contents/PlugIns/FFmpegRGBAToYUVTests.xctest; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				66EDE07919DF15A600D2DDAD /* FFmpegRGBAToYUV.app */,
+				667D86B92E91D6560053D943 /* FFmpegRGBAToYUVTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,7 +158,7 @@
 			);
 			name = FFmpegRGBAToYUVTests;
 			productName = FFmpegRGBAToYUVTests;
-			productReference = 66EDE08C19DF15A600D2DDAD /* FFmpegRGBAToYUVTests.xctest */;
+			productReference = 667D86B92E91D6560053D943 /* FFmpegRGBAToYUVTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -303,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -351,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
