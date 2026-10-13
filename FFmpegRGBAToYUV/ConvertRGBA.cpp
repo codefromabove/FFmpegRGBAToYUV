@@ -56,7 +56,7 @@ extern "C"
  */
 static void video_encode_example(const char *filename, int codec_id)
 {
-    AVCodec *codec;
+    const AVCodec *codec;
     AVCodecContext *c= NULL;
     int i, ret, x, y;
     FILE *f;
@@ -265,8 +265,7 @@ static void video_encode_example(const char *filename, int codec_id)
     fwrite(endcode, 1, sizeof(endcode), f);
     fclose(f);
     
-    avcodec_close(c);
-    av_free(c);
+    avcodec_free_context(&c);
     av_freep(&frame->data[0]);
     av_frame_free(&frame);
     printf("\n");

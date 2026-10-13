@@ -168,7 +168,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 2640;
+				LastUpgradeCheck = 2700;
 				ORGANIZATIONNAME = "Philip Schneider";
 				TargetAttributes = {
 					66EDE07819DF15A600D2DDAD = {
@@ -386,6 +386,7 @@
 					"$(inherited)",
 					/opt/local/lib,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codefromabove.FFmpegRGBAToYUV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +413,7 @@
 					"$(inherited)",
 					/opt/local/lib,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codefromabove.FFmpegRGBAToYUV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
